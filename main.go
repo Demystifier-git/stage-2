@@ -91,7 +91,7 @@ func main() {
 		// Convert the 'number' to an integer
 		number, err := strconv.Atoi(numberStr)
 		if err != nil {
-			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid number. Please provide a valid integer. "})
+			c.JSON(http.StatusBadRequest, gin.H{"error": true})
 			return
 		}
 
